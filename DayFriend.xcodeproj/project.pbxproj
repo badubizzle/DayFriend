@@ -26,6 +26,10 @@
 		6CAEBF5C198C96F10011C7FB /* DFUserData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CAEBF5B198C96F10011C7FB /* DFUserData.m */; };
 		6CAEBF5F198C97420011C7FB /* DFUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CAEBF5E198C97420011C7FB /* DFUser.m */; };
 		6CAEBF62198C9B340011C7FB /* DFOnboardingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CAEBF61198C9B340011C7FB /* DFOnboardingViewController.m */; };
+		6CAEBF66198CC40C0011C7FB /* friendArt.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAEBF64198CC40C0011C7FB /* friendArt.png */; };
+		6CAEBF67198CC40C0011C7FB /* gradient.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAEBF65198CC40C0011C7FB /* gradient.png */; };
+		6CAEBF69198CC6200011C7FB /* UIFont+IBCustomFonts.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CAEBF68198CC6200011C7FB /* UIFont+IBCustomFonts.m */; };
+		6CAEBF6B198CC98E0011C7FB /* GeosansLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6CAEBF6A198CC98E0011C7FB /* GeosansLight.ttf */; };
 		AD9F333FF6CF4C83A7F628E5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 47B83A82D1744871B0C6F0BD /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +73,10 @@
 		6CAEBF5E198C97420011C7FB /* DFUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFUser.m; sourceTree = "<group>"; };
 		6CAEBF60198C9B340011C7FB /* DFOnboardingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFOnboardingViewController.h; sourceTree = "<group>"; };
 		6CAEBF61198C9B340011C7FB /* DFOnboardingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFOnboardingViewController.m; sourceTree = "<group>"; };
+		6CAEBF64198CC40C0011C7FB /* friendArt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = friendArt.png; sourceTree = "<group>"; };
+		6CAEBF65198CC40C0011C7FB /* gradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gradient.png; sourceTree = "<group>"; };
+		6CAEBF68198CC6200011C7FB /* UIFont+IBCustomFonts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+IBCustomFonts.m"; sourceTree = "<group>"; };
+		6CAEBF6A198CC98E0011C7FB /* GeosansLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GeosansLight.ttf; sourceTree = "<group>"; };
 		F7E42885B4774D9BBE465DC7 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,6 +128,7 @@
 		6CAEBF1F198C90830011C7FB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6CAEBF68198CC6200011C7FB /* UIFont+IBCustomFonts.m */,
 				6CAEBF20198C90830011C7FB /* Foundation.framework */,
 				6CAEBF22198C90830011C7FB /* CoreGraphics.framework */,
 				6CAEBF24198C90830011C7FB /* UIKit.framework */,
@@ -143,6 +152,8 @@
 				6CAEBF5A198C96F10011C7FB /* DFUserData.h */,
 				6CAEBF5B198C96F10011C7FB /* DFUserData.m */,
 				6CAEBF55198C93120011C7FB /* square.jpg */,
+				6CAEBF64198CC40C0011C7FB /* friendArt.png */,
+				6CAEBF65198CC40C0011C7FB /* gradient.png */,
 				6CAEBF38198C90830011C7FB /* Images.xcassets */,
 				6CAEBF27198C90830011C7FB /* Supporting Files */,
 			);
@@ -152,6 +163,7 @@
 		6CAEBF27198C90830011C7FB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6CAEBF6A198CC98E0011C7FB /* GeosansLight.ttf */,
 				6CAEBF28198C90830011C7FB /* DayFriend-Info.plist */,
 				6CAEBF29198C90830011C7FB /* InfoPlist.strings */,
 				6CAEBF2C198C90830011C7FB /* main.m */,
@@ -269,8 +281,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CAEBF39198C90830011C7FB /* Images.xcassets in Resources */,
+				6CAEBF67198CC40C0011C7FB /* gradient.png in Resources */,
 				6CAEBF2B198C90830011C7FB /* InfoPlist.strings in Resources */,
+				6CAEBF6B198CC98E0011C7FB /* GeosansLight.ttf in Resources */,
 				6CAEBF56198C93120011C7FB /* square.jpg in Resources */,
+				6CAEBF66198CC40C0011C7FB /* friendArt.png in Resources */,
 				6CAEBF34198C90830011C7FB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CAEBF59198C95200011C7FB /* DFLoginViewController.m in Sources */,
+				6CAEBF69198CC6200011C7FB /* UIFont+IBCustomFonts.m in Sources */,
 				6CAEBF31198C90830011C7FB /* DFAppDelegate.m in Sources */,
 				6CAEBF37198C90830011C7FB /* DFViewController.m in Sources */,
 				6CAEBF2D198C90830011C7FB /* main.m in Sources */,
