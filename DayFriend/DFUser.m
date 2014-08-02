@@ -14,6 +14,7 @@
 @synthesize userID;
 @synthesize name;
 @synthesize imageURL;
+@synthesize coverURL;
 
 //-(id)initWithID:(NSString *)ID withAddressString:(NSString *)addString withAddress:(LYRAddress *)addr andName:(NSString *)nam withImageURL:(NSString *)image{
 //    self = [super init];

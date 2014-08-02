@@ -46,8 +46,13 @@
             NSLog(@"User with facebook signed up and logged in!");
             [FBRequestConnection startForMeWithCompletionHandler:^(FBRequestConnection *connection, id result, NSError *error) {
                 if (!error) {
+                    
                     user = (NSDictionary<FBGraphUser> *)result;
                     NSLog(@"user %@", user.objectID);
+                    NSString *userImageURL = [NSString stringWithFormat:@"https://graph.facebook.com/%@/picture?type=large", [user objectID]];
+                    NSString *coverImageURL = [NSString stringWithFormat:@"https://graph.facebook.com/%@?fields=cover", [user username]];
+                    userData.user.coverURL = coverImageURL;
+                    userData.user.imageURL = userImageURL;
                     userData.user.userID = user.objectID;
                     userData.user.name = user.name;
                     // Store the Facebook Id
