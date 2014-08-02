@@ -1,0 +1,553 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6CAEBF21198C90830011C7FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CAEBF20198C90830011C7FB /* Foundation.framework */; };
+		6CAEBF23198C90830011C7FB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CAEBF22198C90830011C7FB /* CoreGraphics.framework */; };
+		6CAEBF25198C90830011C7FB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CAEBF24198C90830011C7FB /* UIKit.framework */; };
+		6CAEBF2B198C90830011C7FB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6CAEBF29198C90830011C7FB /* InfoPlist.strings */; };
+		6CAEBF2D198C90830011C7FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CAEBF2C198C90830011C7FB /* main.m */; };
+		6CAEBF31198C90830011C7FB /* DFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CAEBF30198C90830011C7FB /* DFAppDelegate.m */; };
+		6CAEBF34198C90830011C7FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CAEBF32198C90830011C7FB /* Main.storyboard */; };
+		6CAEBF37198C90830011C7FB /* DFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CAEBF36198C90830011C7FB /* DFViewController.m */; };
+		6CAEBF39198C90830011C7FB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CAEBF38198C90830011C7FB /* Images.xcassets */; };
+		6CAEBF40198C90830011C7FB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CAEBF3F198C90830011C7FB /* XCTest.framework */; };
+		6CAEBF41198C90830011C7FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CAEBF20198C90830011C7FB /* Foundation.framework */; };
+		6CAEBF42198C90830011C7FB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CAEBF24198C90830011C7FB /* UIKit.framework */; };
+		6CAEBF4A198C90830011C7FB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6CAEBF48198C90830011C7FB /* InfoPlist.strings */; };
+		6CAEBF4C198C90830011C7FB /* DayFriendTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CAEBF4B198C90830011C7FB /* DayFriendTests.m */; };
+		6CAEBF56198C93120011C7FB /* square.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6CAEBF55198C93120011C7FB /* square.jpg */; };
+		6CAEBF59198C95200011C7FB /* DFLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CAEBF58198C95200011C7FB /* DFLoginViewController.m */; };
+		6CAEBF5C198C96F10011C7FB /* DFUserData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CAEBF5B198C96F10011C7FB /* DFUserData.m */; };
+		6CAEBF5F198C97420011C7FB /* DFUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CAEBF5E198C97420011C7FB /* DFUser.m */; };
+		6CAEBF62198C9B340011C7FB /* DFOnboardingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CAEBF61198C9B340011C7FB /* DFOnboardingViewController.m */; };
+		AD9F333FF6CF4C83A7F628E5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 47B83A82D1744871B0C6F0BD /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6CAEBF43198C90830011C7FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CAEBF15198C90830011C7FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CAEBF1C198C90830011C7FB;
+			remoteInfo = DayFriend;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		47B83A82D1744871B0C6F0BD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CAEBF1D198C90830011C7FB /* DayFriend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DayFriend.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CAEBF20198C90830011C7FB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6CAEBF22198C90830011C7FB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6CAEBF24198C90830011C7FB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6CAEBF28198C90830011C7FB /* DayFriend-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DayFriend-Info.plist"; sourceTree = "<group>"; };
+		6CAEBF2A198C90830011C7FB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6CAEBF2C198C90830011C7FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6CAEBF2E198C90830011C7FB /* DayFriend-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DayFriend-Prefix.pch"; sourceTree = "<group>"; };
+		6CAEBF2F198C90830011C7FB /* DFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DFAppDelegate.h; sourceTree = "<group>"; };
+		6CAEBF30198C90830011C7FB /* DFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DFAppDelegate.m; sourceTree = "<group>"; };
+		6CAEBF33198C90830011C7FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6CAEBF35198C90830011C7FB /* DFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DFViewController.h; sourceTree = "<group>"; };
+		6CAEBF36198C90830011C7FB /* DFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DFViewController.m; sourceTree = "<group>"; };
+		6CAEBF38198C90830011C7FB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6CAEBF3E198C90830011C7FB /* DayFriendTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DayFriendTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CAEBF3F198C90830011C7FB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		6CAEBF47198C90830011C7FB /* DayFriendTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DayFriendTests-Info.plist"; sourceTree = "<group>"; };
+		6CAEBF49198C90830011C7FB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6CAEBF4B198C90830011C7FB /* DayFriendTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DayFriendTests.m; sourceTree = "<group>"; };
+		6CAEBF55198C93120011C7FB /* square.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = square.jpg; sourceTree = "<group>"; };
+		6CAEBF57198C95200011C7FB /* DFLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFLoginViewController.h; sourceTree = "<group>"; };
+		6CAEBF58198C95200011C7FB /* DFLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFLoginViewController.m; sourceTree = "<group>"; };
+		6CAEBF5A198C96F10011C7FB /* DFUserData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFUserData.h; sourceTree = "<group>"; };
+		6CAEBF5B198C96F10011C7FB /* DFUserData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFUserData.m; sourceTree = "<group>"; };
+		6CAEBF5D198C97420011C7FB /* DFUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFUser.h; sourceTree = "<group>"; };
+		6CAEBF5E198C97420011C7FB /* DFUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFUser.m; sourceTree = "<group>"; };
+		6CAEBF60198C9B340011C7FB /* DFOnboardingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFOnboardingViewController.h; sourceTree = "<group>"; };
+		6CAEBF61198C9B340011C7FB /* DFOnboardingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFOnboardingViewController.m; sourceTree = "<group>"; };
+		F7E42885B4774D9BBE465DC7 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6CAEBF1A198C90830011C7FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CAEBF23198C90830011C7FB /* CoreGraphics.framework in Frameworks */,
+				6CAEBF25198C90830011C7FB /* UIKit.framework in Frameworks */,
+				6CAEBF21198C90830011C7FB /* Foundation.framework in Frameworks */,
+				AD9F333FF6CF4C83A7F628E5 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CAEBF3B198C90830011C7FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CAEBF40198C90830011C7FB /* XCTest.framework in Frameworks */,
+				6CAEBF42198C90830011C7FB /* UIKit.framework in Frameworks */,
+				6CAEBF41198C90830011C7FB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6CAEBF14198C90830011C7FB = {
+			isa = PBXGroup;
+			children = (
+				6CAEBF26198C90830011C7FB /* DayFriend */,
+				6CAEBF45198C90830011C7FB /* DayFriendTests */,
+				6CAEBF1F198C90830011C7FB /* Frameworks */,
+				6CAEBF1E198C90830011C7FB /* Products */,
+				F7E42885B4774D9BBE465DC7 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		6CAEBF1E198C90830011C7FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6CAEBF1D198C90830011C7FB /* DayFriend.app */,
+				6CAEBF3E198C90830011C7FB /* DayFriendTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6CAEBF1F198C90830011C7FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6CAEBF20198C90830011C7FB /* Foundation.framework */,
+				6CAEBF22198C90830011C7FB /* CoreGraphics.framework */,
+				6CAEBF24198C90830011C7FB /* UIKit.framework */,
+				6CAEBF3F198C90830011C7FB /* XCTest.framework */,
+				47B83A82D1744871B0C6F0BD /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6CAEBF26198C90830011C7FB /* DayFriend */ = {
+			isa = PBXGroup;
+			children = (
+				6CAEBF2F198C90830011C7FB /* DFAppDelegate.h */,
+				6CAEBF30198C90830011C7FB /* DFAppDelegate.m */,
+				6CAEBF32198C90830011C7FB /* Main.storyboard */,
+				6CAEBF63198C9B3C0011C7FB /* Onboarding */,
+				6CAEBF35198C90830011C7FB /* DFViewController.h */,
+				6CAEBF36198C90830011C7FB /* DFViewController.m */,
+				6CAEBF5D198C97420011C7FB /* DFUser.h */,
+				6CAEBF5E198C97420011C7FB /* DFUser.m */,
+				6CAEBF5A198C96F10011C7FB /* DFUserData.h */,
+				6CAEBF5B198C96F10011C7FB /* DFUserData.m */,
+				6CAEBF55198C93120011C7FB /* square.jpg */,
+				6CAEBF38198C90830011C7FB /* Images.xcassets */,
+				6CAEBF27198C90830011C7FB /* Supporting Files */,
+			);
+			path = DayFriend;
+			sourceTree = "<group>";
+		};
+		6CAEBF27198C90830011C7FB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6CAEBF28198C90830011C7FB /* DayFriend-Info.plist */,
+				6CAEBF29198C90830011C7FB /* InfoPlist.strings */,
+				6CAEBF2C198C90830011C7FB /* main.m */,
+				6CAEBF2E198C90830011C7FB /* DayFriend-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6CAEBF45198C90830011C7FB /* DayFriendTests */ = {
+			isa = PBXGroup;
+			children = (
+				6CAEBF4B198C90830011C7FB /* DayFriendTests.m */,
+				6CAEBF46198C90830011C7FB /* Supporting Files */,
+			);
+			path = DayFriendTests;
+			sourceTree = "<group>";
+		};
+		6CAEBF46198C90830011C7FB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6CAEBF47198C90830011C7FB /* DayFriendTests-Info.plist */,
+				6CAEBF48198C90830011C7FB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6CAEBF63198C9B3C0011C7FB /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				6CAEBF57198C95200011C7FB /* DFLoginViewController.h */,
+				6CAEBF58198C95200011C7FB /* DFLoginViewController.m */,
+				6CAEBF60198C9B340011C7FB /* DFOnboardingViewController.h */,
+				6CAEBF61198C9B340011C7FB /* DFOnboardingViewController.m */,
+			);
+			name = Onboarding;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6CAEBF1C198C90830011C7FB /* DayFriend */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CAEBF4F198C90830011C7FB /* Build configuration list for PBXNativeTarget "DayFriend" */;
+			buildPhases = (
+				72B2F4879C0944C7B40B79B2 /* Check Pods Manifest.lock */,
+				6CAEBF19198C90830011C7FB /* Sources */,
+				6CAEBF1A198C90830011C7FB /* Frameworks */,
+				6CAEBF1B198C90830011C7FB /* Resources */,
+				52CF78637A074A5B874ABCDC /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DayFriend;
+			productName = DayFriend;
+			productReference = 6CAEBF1D198C90830011C7FB /* DayFriend.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6CAEBF3D198C90830011C7FB /* DayFriendTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CAEBF52198C90830011C7FB /* Build configuration list for PBXNativeTarget "DayFriendTests" */;
+			buildPhases = (
+				6CAEBF3A198C90830011C7FB /* Sources */,
+				6CAEBF3B198C90830011C7FB /* Frameworks */,
+				6CAEBF3C198C90830011C7FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6CAEBF44198C90830011C7FB /* PBXTargetDependency */,
+			);
+			name = DayFriendTests;
+			productName = DayFriendTests;
+			productReference = 6CAEBF3E198C90830011C7FB /* DayFriendTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6CAEBF15198C90830011C7FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DF;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Spencer Yen";
+				TargetAttributes = {
+					6CAEBF3D198C90830011C7FB = {
+						TestTargetID = 6CAEBF1C198C90830011C7FB;
+					};
+				};
+			};
+			buildConfigurationList = 6CAEBF18198C90830011C7FB /* Build configuration list for PBXProject "DayFriend" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6CAEBF14198C90830011C7FB;
+			productRefGroup = 6CAEBF1E198C90830011C7FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6CAEBF1C198C90830011C7FB /* DayFriend */,
+				6CAEBF3D198C90830011C7FB /* DayFriendTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6CAEBF1B198C90830011C7FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CAEBF39198C90830011C7FB /* Images.xcassets in Resources */,
+				6CAEBF2B198C90830011C7FB /* InfoPlist.strings in Resources */,
+				6CAEBF56198C93120011C7FB /* square.jpg in Resources */,
+				6CAEBF34198C90830011C7FB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CAEBF3C198C90830011C7FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CAEBF4A198C90830011C7FB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		52CF78637A074A5B874ABCDC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72B2F4879C0944C7B40B79B2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6CAEBF19198C90830011C7FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CAEBF59198C95200011C7FB /* DFLoginViewController.m in Sources */,
+				6CAEBF31198C90830011C7FB /* DFAppDelegate.m in Sources */,
+				6CAEBF37198C90830011C7FB /* DFViewController.m in Sources */,
+				6CAEBF2D198C90830011C7FB /* main.m in Sources */,
+				6CAEBF62198C9B340011C7FB /* DFOnboardingViewController.m in Sources */,
+				6CAEBF5F198C97420011C7FB /* DFUser.m in Sources */,
+				6CAEBF5C198C96F10011C7FB /* DFUserData.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CAEBF3A198C90830011C7FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CAEBF4C198C90830011C7FB /* DayFriendTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6CAEBF44198C90830011C7FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6CAEBF1C198C90830011C7FB /* DayFriend */;
+			targetProxy = 6CAEBF43198C90830011C7FB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6CAEBF29198C90830011C7FB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CAEBF2A198C90830011C7FB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6CAEBF32198C90830011C7FB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CAEBF33198C90830011C7FB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6CAEBF48198C90830011C7FB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CAEBF49198C90830011C7FB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6CAEBF4D198C90830011C7FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6CAEBF4E198C90830011C7FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6CAEBF50198C90830011C7FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7E42885B4774D9BBE465DC7 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DayFriend/DayFriend-Prefix.pch";
+				INFOPLIST_FILE = "DayFriend/DayFriend-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6CAEBF51198C90830011C7FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7E42885B4774D9BBE465DC7 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DayFriend/DayFriend-Prefix.pch";
+				INFOPLIST_FILE = "DayFriend/DayFriend-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6CAEBF53198C90830011C7FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DayFriend.app/DayFriend";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DayFriend/DayFriend-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DayFriendTests/DayFriendTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		6CAEBF54198C90830011C7FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DayFriend.app/DayFriend";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DayFriend/DayFriend-Prefix.pch";
+				INFOPLIST_FILE = "DayFriendTests/DayFriendTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6CAEBF18198C90830011C7FB /* Build configuration list for PBXProject "DayFriend" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CAEBF4D198C90830011C7FB /* Debug */,
+				6CAEBF4E198C90830011C7FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CAEBF4F198C90830011C7FB /* Build configuration list for PBXNativeTarget "DayFriend" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CAEBF50198C90830011C7FB /* Debug */,
+				6CAEBF51198C90830011C7FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CAEBF52198C90830011C7FB /* Build configuration list for PBXNativeTarget "DayFriendTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CAEBF53198C90830011C7FB /* Debug */,
+				6CAEBF54198C90830011C7FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6CAEBF15198C90830011C7FB /* Project object */;
+}
