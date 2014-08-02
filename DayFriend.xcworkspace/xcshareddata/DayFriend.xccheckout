@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>9EA7CA38-03ED-42DE-A619-C6750FD80D83</string>
+	<key>IDESourceControlProjectName</key>
+	<string>DayFriend</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F1A1B9D0-5722-4F79-A1CB-8D32B8A8F35C</key>
+		<string>https://github.com/spenciefy/DayFriend.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>DayFriend.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F1A1B9D0-5722-4F79-A1CB-8D32B8A8F35C</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/spenciefy/DayFriend.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F1A1B9D0-5722-4F79-A1CB-8D32B8A8F35C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F1A1B9D0-5722-4F79-A1CB-8D32B8A8F35C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>DayFriend</string>
+		</dict>
+	</array>
+</dict>
+</plist>
