@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C6D6F9E198CD01700BE4AF2 /* DFProfileSetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C6D6F9D198CD01700BE4AF2 /* DFProfileSetupViewController.m */; };
 		6CAEBF21198C90830011C7FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CAEBF20198C90830011C7FB /* Foundation.framework */; };
 		6CAEBF23198C90830011C7FB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CAEBF22198C90830011C7FB /* CoreGraphics.framework */; };
 		6CAEBF25198C90830011C7FB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CAEBF24198C90830011C7FB /* UIKit.framework */; };
@@ -44,6 +45,8 @@
 
 /* Begin PBXFileReference section */
 		47B83A82D1744871B0C6F0BD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C6D6F9C198CD01700BE4AF2 /* DFProfileSetupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFProfileSetupViewController.h; sourceTree = "<group>"; };
+		6C6D6F9D198CD01700BE4AF2 /* DFProfileSetupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFProfileSetupViewController.m; sourceTree = "<group>"; };
 		6CAEBF1D198C90830011C7FB /* DayFriend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DayFriend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CAEBF20198C90830011C7FB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6CAEBF22198C90830011C7FB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -192,6 +195,8 @@
 			children = (
 				6CAEBF57198C95200011C7FB /* DFLoginViewController.h */,
 				6CAEBF58198C95200011C7FB /* DFLoginViewController.m */,
+				6C6D6F9C198CD01700BE4AF2 /* DFProfileSetupViewController.h */,
+				6C6D6F9D198CD01700BE4AF2 /* DFProfileSetupViewController.m */,
 				6CAEBF60198C9B340011C7FB /* DFOnboardingViewController.h */,
 				6CAEBF61198C9B340011C7FB /* DFOnboardingViewController.m */,
 			);
@@ -339,6 +344,7 @@
 				6CAEBF31198C90830011C7FB /* DFAppDelegate.m in Sources */,
 				6CAEBF37198C90830011C7FB /* DFViewController.m in Sources */,
 				6CAEBF2D198C90830011C7FB /* main.m in Sources */,
+				6C6D6F9E198CD01700BE4AF2 /* DFProfileSetupViewController.m in Sources */,
 				6CAEBF62198C9B340011C7FB /* DFOnboardingViewController.m in Sources */,
 				6CAEBF5F198C97420011C7FB /* DFUser.m in Sources */,
 				6CAEBF5C198C96F10011C7FB /* DFUserData.m in Sources */,
