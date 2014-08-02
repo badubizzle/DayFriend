@@ -6,11 +6,6 @@
 	<array>
 		<string>GeosansLight.ttf</string>
 	</array>
-	<key>IBCustomFonts</key>
-	<dict>
-		<key>HelveticaNeue-Light</key>
-		<string>GeosansLight.ttf</string>
-	</dict>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
