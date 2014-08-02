@@ -7,12 +7,20 @@
 //
 
 #import "DFProfileSetupViewController.h"
-
+#import "UIImageView+WebCache.h"
+#import "DFUserData.h"
 @interface DFProfileSetupViewController ()
 
 @end
 
-@implementation DFProfileSetupViewController
+@implementation DFProfileSetupViewController{
+    DFUserData *userData;
+}
+@synthesize helloNameLabel;
+@synthesize coverImage;
+@synthesize profileImage;
+@synthesize aboutTextfield;
+@synthesize doneButton;
 
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,7 +34,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    userData = [DFUserData sharedManager];
+    helloNameLabel.text = [NSString stringWithFormat:@"Hello, %@]", _name];
+    [coverImage sd_setImageWithURL:[NSURL URLWithString:_coverImageURL]];
+    [profileImage sd_setImageWithURL:[NSURL URLWithString:_profileImageURL]];
+    doneButton.hidden = YES;
 }
 
 - (void)didReceiveMemoryWarning
@@ -45,5 +57,12 @@
     // Pass the selected object to the new view controller.
 }
 */
+-(void)textFieldDidEndEditing:(UITextField *)textField {
+    doneButton.hidden = NO;
+    userData.user.aboutString = textField.text;
+}
 
+- (IBAction)doneButton:(id)sender {
+    [self performSegueWithIdentifier:@"PushOnboarding" sender:self];
+}
 @end

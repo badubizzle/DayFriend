@@ -36,6 +36,12 @@
 #define COCOAPODS_VERSION_MINOR_JSQSystemSoundPlayer 5
 #define COCOAPODS_VERSION_PATCH_JSQSystemSoundPlayer 2
 
+// LayerKit
+#define COCOAPODS_POD_AVAILABLE_LayerKit
+#define COCOAPODS_VERSION_MAJOR_LayerKit 0
+#define COCOAPODS_VERSION_MINOR_LayerKit 7
+#define COCOAPODS_VERSION_PATCH_LayerKit 7
+
 // Parse
 #define COCOAPODS_POD_AVAILABLE_Parse
 #define COCOAPODS_VERSION_MAJOR_Parse 1

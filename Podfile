@@ -4,6 +4,8 @@ pod 'JSQMessagesViewController'
 pod 'SDWebImage', '~>3.6'
 pod "BlurImageProcessor"
 pod 'Parse'
+pod 'LayerKit'
+
 
 
 

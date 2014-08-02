@@ -10,4 +10,6 @@
 
 @interface DFOnboardingViewController : UIViewController
 
+- (IBAction)doneButton:(id)sender;
+
 @end

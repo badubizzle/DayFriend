@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6C06309B198CD1650028BC5D /* numberCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C06309A198CD1650028BC5D /* numberCircle.png */; };
+		6C0630A0198D65A50028BC5D /* DFLayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C06309F198D65A50028BC5D /* DFLayerController.m */; };
 		6C6D6F9E198CD01700BE4AF2 /* DFProfileSetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C6D6F9D198CD01700BE4AF2 /* DFProfileSetupViewController.m */; };
 		6CAEBF21198C90830011C7FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CAEBF20198C90830011C7FB /* Foundation.framework */; };
 		6CAEBF23198C90830011C7FB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CAEBF22198C90830011C7FB /* CoreGraphics.framework */; };
@@ -47,6 +48,8 @@
 /* Begin PBXFileReference section */
 		47B83A82D1744871B0C6F0BD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C06309A198CD1650028BC5D /* numberCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = numberCircle.png; sourceTree = "<group>"; };
+		6C06309E198D65A50028BC5D /* DFLayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFLayerController.h; sourceTree = "<group>"; };
+		6C06309F198D65A50028BC5D /* DFLayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFLayerController.m; sourceTree = "<group>"; };
 		6C6D6F9C198CD01700BE4AF2 /* DFProfileSetupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFProfileSetupViewController.h; sourceTree = "<group>"; };
 		6C6D6F9D198CD01700BE4AF2 /* DFProfileSetupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFProfileSetupViewController.m; sourceTree = "<group>"; };
 		6CAEBF1D198C90830011C7FB /* DayFriend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DayFriend.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +111,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C06309C198D5A180028BC5D /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				6CAEBF55198C93120011C7FB /* square.jpg */,
+				6C06309A198CD1650028BC5D /* numberCircle.png */,
+				6CAEBF64198CC40C0011C7FB /* friendArt.png */,
+				6CAEBF65198CC40C0011C7FB /* gradient.png */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		6C06309D198D5A2D0028BC5D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6CAEBF5D198C97420011C7FB /* DFUser.h */,
+				6CAEBF5E198C97420011C7FB /* DFUser.m */,
+				6CAEBF5A198C96F10011C7FB /* DFUserData.h */,
+				6CAEBF5B198C96F10011C7FB /* DFUserData.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		6CAEBF14198C90830011C7FB = {
 			isa = PBXGroup;
 			children = (
@@ -149,14 +174,10 @@
 				6CAEBF63198C9B3C0011C7FB /* Onboarding */,
 				6CAEBF35198C90830011C7FB /* DFViewController.h */,
 				6CAEBF36198C90830011C7FB /* DFViewController.m */,
-				6CAEBF5D198C97420011C7FB /* DFUser.h */,
-				6CAEBF5E198C97420011C7FB /* DFUser.m */,
-				6CAEBF5A198C96F10011C7FB /* DFUserData.h */,
-				6CAEBF5B198C96F10011C7FB /* DFUserData.m */,
-				6CAEBF55198C93120011C7FB /* square.jpg */,
-				6C06309A198CD1650028BC5D /* numberCircle.png */,
-				6CAEBF64198CC40C0011C7FB /* friendArt.png */,
-				6CAEBF65198CC40C0011C7FB /* gradient.png */,
+				6C06309E198D65A50028BC5D /* DFLayerController.h */,
+				6C06309F198D65A50028BC5D /* DFLayerController.m */,
+				6C06309D198D5A2D0028BC5D /* Model */,
+				6C06309C198D5A180028BC5D /* Assets */,
 				6CAEBF38198C90830011C7FB /* Images.xcassets */,
 				6CAEBF27198C90830011C7FB /* Supporting Files */,
 			);
@@ -344,6 +365,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C0630A0198D65A50028BC5D /* DFLayerController.m in Sources */,
 				6CAEBF59198C95200011C7FB /* DFLoginViewController.m in Sources */,
 				6CAEBF31198C90830011C7FB /* DFAppDelegate.m in Sources */,
 				6CAEBF37198C90830011C7FB /* DFViewController.m in Sources */,

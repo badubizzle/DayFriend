@@ -53,4 +53,6 @@ if(![self isSignedUp]){
 }
 
 
+- (IBAction)pushChat:(id)sender {
+}
 @end

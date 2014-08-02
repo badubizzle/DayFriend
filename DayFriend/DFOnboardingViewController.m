@@ -46,4 +46,7 @@
 }
 */
 
+- (IBAction)doneButton:(id)sender {
+    [self performSegueWithIdentifier:@"ModalMain" sender:self];
+}
 @end

@@ -12,7 +12,7 @@
 @interface DFUserData : NSObject
 
 @property (nonatomic,retain) DFUser *user;
-
+@property (nonatomic) NSInteger interactions;
 + (id)sharedManager;
 
 @end

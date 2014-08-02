@@ -9,6 +9,7 @@
 #import "DFAppDelegate.h"
 #import <FacebookSDK/FacebookSDK.h>
 #import <Parse/Parse.h>
+#import <LayerKit/LayerKit.h>
 
 
 @implementation DFAppDelegate
@@ -19,6 +20,18 @@
                   clientKey:@"K5VJnOzNzUIfUL1lyR3anH3L45C6QCPNSLfS8Zts"];
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     [PFFacebookUtils initializeFacebook];
+    
+    NSUUID *appID = [[NSUUID alloc] initWithUUIDString:@"ebe4a60e-19c1-11e4-b957-a19800003b1a"];
+    LYRClient *layerClient = [LYRClient clientWithAppID:appID];
+    
+    
+    // Tells the LayerClient to establish a connection with the Layer service
+    [layerClient connectWithCompletion:^(BOOL success, NSError *error) {
+        if (success) {
+            NSLog(@"connected to layer client");
+        }
+        
+    }];
     
     return YES;
 }

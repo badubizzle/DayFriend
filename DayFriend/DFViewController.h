@@ -9,5 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface DFViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIImageView *dayFriendCoverImage;
+@property (weak, nonatomic) IBOutlet UIImageView *dayFriendProfileImage;
+@property (weak, nonatomic) IBOutlet UIImageView *selfProfileImage;
+@property (weak, nonatomic) IBOutlet UIImageView *selfCoverImage;
+
+- (IBAction)pushChat:(id)sender;
 
 @end

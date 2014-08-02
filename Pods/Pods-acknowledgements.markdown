@@ -304,6 +304,11 @@ IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTI
 OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
+## LayerKit
+
+This repository contains commercially licensed software produced by Layer, Inc.
+
+
 ## Parse
 
 See https://parse.com/about/terms

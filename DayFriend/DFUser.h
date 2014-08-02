@@ -15,6 +15,7 @@
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *imageURL;
 @property (nonatomic, strong) NSString *coverURL;
+@property (nonatomic, strong) NSString *aboutString;
 
 //-(id)initWithID:(NSString *)ID withAddressString:(NSString *)addString withAddress:(LYRAddress *)addr andName:(NSString *)nam withImageURL:(NSString *)image;
 

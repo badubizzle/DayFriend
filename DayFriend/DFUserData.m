@@ -10,6 +10,7 @@
 
 @implementation DFUserData
 @synthesize user;
+@synthesize interactions;
 
 + (id)sharedManager {
     static DFUserData *userData = nil;
