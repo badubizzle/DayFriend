@@ -9,6 +9,8 @@
 #import "DFProfileSetupViewController.h"
 #import "UIImageView+WebCache.h"
 #import "DFUserData.h"
+#import <QuartzCore/QuartzCore.h>
+
 @interface DFProfileSetupViewController ()
 
 @end
@@ -16,6 +18,7 @@
 @implementation DFProfileSetupViewController{
     DFUserData *userData;
 }
+
 @synthesize helloNameLabel;
 @synthesize coverImage;
 @synthesize profileImage;
@@ -38,6 +41,11 @@
     helloNameLabel.text = [NSString stringWithFormat:@"Hello, %@", _name];
     [coverImage sd_setImageWithURL:[NSURL URLWithString:_coverImageURL]];
     [profileImage sd_setImageWithURL:[NSURL URLWithString:_profileImageURL]];
+    
+    profileImage.layer.cornerRadius = profileImage.frame.size.width / 2;
+    profileImage.layer.borderColor = [UIColor whiteColor].CGColor;
+    profileImage.layer.borderWidth = 5.0;
+    
     doneButton.hidden = YES;
 }
 

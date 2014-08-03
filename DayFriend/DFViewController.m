@@ -36,7 +36,7 @@
     userData.userDetails =[NSKeyedUnarchiver unarchiveObjectWithData:[defaults objectForKey:@"userDetails"]];
 
    [_selfProfileImage sd_setImageWithURL:[NSURL URLWithString:userData.user.imageURL]];
-    [_selfCoverImage setImage:[UIImage imageNamed:@"coverImage.jpg"]];
+    [_selfCoverImage setImage:[UIImage imageNamed:@"friendArt.png"]];
     blurImageProcessor = [[ALDBlurImageProcessor alloc] initWithImage: _selfCoverImage.image];
     
     [blurImageProcessor asyncBlurWithRadius: 8
