@@ -35,8 +35,17 @@
 
     userData.userDetails =[NSKeyedUnarchiver unarchiveObjectWithData:[defaults objectForKey:@"userDetails"]];
 
-   [_selfProfileImage sd_setImageWithURL:[NSURL URLWithString:userData.user.imageURL]];
+    [_selfProfileImage sd_setImageWithURL:[NSURL URLWithString:userData.user.imageURL]];
     [_selfCoverImage setImage:[UIImage imageNamed:@"friendArt.png"]];
+    _selfCoverImage.layer.cornerRadius = _selfCoverImage.frame.size.width / 2;
+    _selfCoverImage.layer.borderColor = [UIColor whiteColor].CGColor;
+    _selfCoverImage.layer.borderWidth = 5.0;
+    
+    _dayFriendProfileImage.layer.cornerRadius = _dayFriendProfileImage.frame.size.width / 2;
+    _dayFriendProfileImage.layer.borderColor = [UIColor whiteColor].CGColor;
+    _dayFriendProfileImage.layer.borderWidth = 5.0;
+
+
     blurImageProcessor = [[ALDBlurImageProcessor alloc] initWithImage: _selfCoverImage.image];
     
     [blurImageProcessor asyncBlurWithRadius: 8
