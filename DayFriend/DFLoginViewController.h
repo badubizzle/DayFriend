@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LSAPIManager.h"
 
 @interface DFLoginViewController : UIViewController
 
 - (IBAction)loginFacebook:(id)sender;
+
+@property (nonatomic, strong) LSAPIManager *APIManager;
 
 @end

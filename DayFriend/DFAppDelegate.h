@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LSAuthenticationViewController.h"
 
 @interface DFAppDelegate : UIResponder <UIApplicationDelegate>
 

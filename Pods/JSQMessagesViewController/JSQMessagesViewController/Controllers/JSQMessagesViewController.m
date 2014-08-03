@@ -384,6 +384,13 @@ static void * kJSQMessagesKeyValueObservingContext = &kJSQMessagesKeyValueObserv
     BOOL isOutgoingMessage = [messageSender isEqualToString:self.sender];
     
     NSString *cellIdentifier = isOutgoingMessage ? self.outgoingCellIdentifier : self.incomingCellIdentifier;
+#warning HUGE HACK AVOID
+    if([cellIdentifier isEqualToString:@"JSQMessagesCollectionViewCellIncoming"]){
+        cellIdentifier = @"JSQMessagesCollectionViewCellOutgoing";
+    }else{
+        cellIdentifier = @"JSQMessagesCollectionViewCellIncoming";
+
+    }
     JSQMessagesCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
     cell.delegate = self;
     

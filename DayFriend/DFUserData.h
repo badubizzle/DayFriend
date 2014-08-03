@@ -8,11 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import "DFUser.h"
+#import <LayerKit/LayerKit.h>
 
 @interface DFUserData : NSObject
 
 @property (nonatomic,retain) DFUser *user;
 @property (nonatomic) NSInteger interactions;
+@property (nonatomic, retain) NSDictionary *userDetails;
+@property (nonatomic, retain) LYRClient *client;
 + (id)sharedManager;
 
 @end

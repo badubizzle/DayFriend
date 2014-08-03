@@ -10,13 +10,12 @@
 
 @interface DFUser : NSObject
 @property (nonatomic, strong) NSString *userID;
-@property (nonatomic, strong) NSString *addressString;
-//@property (nonatomic, strong) LYRAddress *address;
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *imageURL;
 @property (nonatomic, strong) NSString *coverURL;
 @property (nonatomic, strong) NSString *aboutString;
+@property (nonatomic, strong) NSString *layerID;
+-(id)initWithID:(NSString *)ID withAddress:(NSString *)addr andName:(NSString *)nam withImageURL:(NSString *)image andCoverURL:(NSString *)caoverURL andAbout:(NSString *)about;
 
-//-(id)initWithID:(NSString *)ID withAddressString:(NSString *)addString withAddress:(LYRAddress *)addr andName:(NSString *)nam withImageURL:(NSString *)image;
 
 @end

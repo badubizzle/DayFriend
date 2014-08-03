@@ -35,7 +35,7 @@
 {
     [super viewDidLoad];
     userData = [DFUserData sharedManager];
-    helloNameLabel.text = [NSString stringWithFormat:@"Hello, %@]", _name];
+    helloNameLabel.text = [NSString stringWithFormat:@"Hello, %@", _name];
     [coverImage sd_setImageWithURL:[NSURL URLWithString:_coverImageURL]];
     [profileImage sd_setImageWithURL:[NSURL URLWithString:_profileImageURL]];
     doneButton.hidden = YES;
@@ -57,6 +57,12 @@
     // Pass the selected object to the new view controller.
 }
 */
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return NO;
+}
+
+
 -(void)textFieldDidEndEditing:(UITextField *)textField {
     doneButton.hidden = NO;
     userData.user.aboutString = textField.text;

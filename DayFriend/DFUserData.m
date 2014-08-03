@@ -11,6 +11,8 @@
 @implementation DFUserData
 @synthesize user;
 @synthesize interactions;
+@synthesize userDetails;
+@synthesize client;
 
 + (id)sharedManager {
     static DFUserData *userData = nil;
@@ -23,6 +25,7 @@
 }
 - (id)init {
     if (self = [super init]) {
+        user = [[DFUser alloc] init];
     }
     return self;
 }

@@ -10,30 +10,32 @@
 
 @implementation DFUser
 //@synthesize address;
-@synthesize addressString;
 @synthesize userID;
 @synthesize name;
 @synthesize imageURL;
 @synthesize coverURL;
 @synthesize aboutString;
+@synthesize layerID;
 
-//-(id)initWithID:(NSString *)ID withAddressString:(NSString *)addString withAddress:(LYRAddress *)addr andName:(NSString *)nam withImageURL:(NSString *)image{
-//    self = [super init];
-//    if(self)
-//    {
-//        self.userID = ID;
-//        self.addressString = addString;
-//        self.address = address;
-//        self.name = nam;
-//        self.imageURL = image;
-//    }
-//    return self;
-//}
+-(id)initWithID:(NSString *)ID withAddress:(NSString *)addr andName:(NSString *)nam withImageURL:(NSString *)image andCoverURL:(NSString *)caoverURL andAbout:(NSString *)about {
+self = [super init];
+    if(self)
+    {
+        self.userID = ID;
+        self.layerID = addr;
+        self.coverURL = caoverURL;
+        self.name = nam;
+        self.imageURL = image;
+        self.aboutString = about;
+    }
+    return self;
+}
 
--(void)encodeWithCode:(NSCoder *)encoder{
+-(void)encodeWithCoder:(NSCoder *)encoder{
     [encoder encodeObject:self.userID forKey:@"userID"];
-    [encoder encodeObject:self.addressString forKey:@"addressString"];
-  //  [encoder encodeObject:self.address forKey:@"address"];
+    [encoder encodeObject:self.aboutString forKey:@"about"];
+    [encoder encodeObject:self.coverURL forKey:@"coverURL"];
+    [encoder encodeObject:self.layerID forKey:@"layerID"];
     [encoder encodeObject:self.name forKey:@"name"];
     [encoder encodeObject:self.imageURL forKey:@"imageURL"];
 }
@@ -45,8 +47,9 @@
     }
     
     self.userID = [decoder decodeObjectForKey:@"userID"];
-    self.addressString = [decoder decodeObjectForKey:@"addressString"];
-   // self.address = [decoder decodeObjectForKey:@"address"];
+    self.aboutString = [decoder decodeObjectForKey:@"about"];
+    self.layerID = [decoder decodeObjectForKey:@"layerID"];
+    self.coverURL = [decoder decodeObjectForKey:@"coverURL"];
     self.name = [decoder decodeObjectForKey:@"name"];
     self.imageURL = [decoder decodeObjectForKey:@"imageURL"];
     
