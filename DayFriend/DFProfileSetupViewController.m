@@ -45,6 +45,7 @@
     profileImage.layer.cornerRadius = profileImage.frame.size.width / 2;
     profileImage.layer.borderColor = [UIColor whiteColor].CGColor;
     profileImage.layer.borderWidth = 5.0;
+    profileImage.clipsToBounds = YES;
     
     doneButton.hidden = YES;
 }

@@ -36,26 +36,28 @@
     userData.userDetails =[NSKeyedUnarchiver unarchiveObjectWithData:[defaults objectForKey:@"userDetails"]];
 
     [_selfProfileImage sd_setImageWithURL:[NSURL URLWithString:userData.user.imageURL]];
-    [_selfCoverImage setImage:[UIImage imageNamed:@"friendArt.png"]];
-    _selfCoverImage.layer.cornerRadius = _selfCoverImage.frame.size.width / 2;
-    _selfCoverImage.layer.borderColor = [UIColor whiteColor].CGColor;
-    _selfCoverImage.layer.borderWidth = 5.0;
+    //[_selfCoverImage setImage:[UIImage imageNamed:@"coverPhoto2.jpg"]];
+    _selfProfileImage.layer.cornerRadius = _selfProfileImage.frame.size.width / 2;
+    _selfProfileImage.layer.borderColor = [UIColor whiteColor].CGColor;
+    _selfProfileImage.layer.borderWidth = 5.0;
+    _selfProfileImage.clipsToBounds = YES;
     
     _dayFriendProfileImage.layer.cornerRadius = _dayFriendProfileImage.frame.size.width / 2;
     _dayFriendProfileImage.layer.borderColor = [UIColor whiteColor].CGColor;
     _dayFriendProfileImage.layer.borderWidth = 5.0;
+    _dayFriendProfileImage.clipsToBounds = YES;
 
 
-    blurImageProcessor = [[ALDBlurImageProcessor alloc] initWithImage: _selfCoverImage.image];
-    
-    [blurImageProcessor asyncBlurWithRadius: 8
-                                 iterations: 7
-                               successBlock: ^(UIImage *blurredImage) {
-                                   _selfCoverImage.image = blurredImage;
-                               }
-                                 errorBlock: ^( NSNumber *errorCode ) {
-                                     NSLog( @"Error code: %d", [errorCode intValue] );
-                                 }];
+//    blurImageProcessor = [[ALDBlurImageProcessor alloc] initWithImage: _selfCoverImage.image];
+//    
+//    [blurImageProcessor asyncBlurWithRadius: 8
+//                                 iterations: 7
+//                               successBlock: ^(UIImage *blurredImage) {
+//                                   _selfCoverImage.image = blurredImage;
+//                               }
+//                                 errorBlock: ^( NSNumber *errorCode ) {
+//                                     NSLog( @"Error code: %d", [errorCode intValue] );
+//                                 }];
 
 
 
